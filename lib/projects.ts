@@ -10,6 +10,8 @@ export type Project = {
     description: string;
     tags: string[];
     date: string;
+    state?: string;
+    coverImage?: string;
     liveUrl?: string;
     githubUrl?: string;
 };
@@ -27,6 +29,8 @@ export function getAllProjects(): Project[] {
                 description: data.description ?? "",
                 tags: data.tags ?? [],
                 date: data.date ?? "",
+                state: data.state,
+                coverImage: data.coverImage,
                 liveUrl: data.liveUrl,
                 githubUrl: data.githubUrl,
             } as Project;

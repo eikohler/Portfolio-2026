@@ -1,5 +1,3 @@
-import { SOCIAL_LINKS } from "@/content/constants";
-import Link from "next/link";
 import Button from "./ui/Button";
 import ArrowIcon from "./icons/ArrowIcon";
 
@@ -19,7 +17,7 @@ export default function Hero() {
                 I turn complex problems into sleek, user-friendly interfaces.
             </p>
             <div className="flex items-center justify-center gap-4">
-                <Button href="/about">
+                <Button href="#featured-projects">
                     See Projects <ArrowIcon type='down' />
                 </Button>
                 <Button href="/about" className="bg-transparent border-[#9AC2FF] text-white">

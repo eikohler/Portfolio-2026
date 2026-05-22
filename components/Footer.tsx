@@ -7,12 +7,12 @@ import GitHubIcon from './icons/GitHubIcon'
 
 export default function Footer() {
     return (
-        <footer className="border-t border-zinc-800 py-8">
-            <div className="flex items-center justify-center gap-6 text-zinc-400">
-                <Link href="/" className="hover:text-white transition-colors"><LogoIcon /></Link>
-                <a href={SOCIAL_LINKS.email} className="hover:text-white transition-colors"><EmailIcon /></a>
-                <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><LinkedInIcon /></a>
-                <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><GitHubIcon /></a>
+        <footer className="pb-12">
+            <div className="flex items-end justify-center gap-6 text-[#C5CAD2]">
+                <Link href="/" className="hover:text-white hover:scale-105 transition-all"><LogoIcon /></Link>
+                <a href={SOCIAL_LINKS.email} className="hover:text-white hover:scale-105 transition-all"><EmailIcon /></a>
+                <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white hover:scale-105 transition-all"><LinkedInIcon /></a>
+                <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="hover:text-white hover:scale-105 transition-all"><GitHubIcon /></a>
             </div>
         </footer>
     )
